@@ -1,7 +1,8 @@
-FROM python:3.9
+FROM python:3.11
 
 RUN pip install mysql-connector-python
 
-WORKDIR home\matias\mysql-docker-python
+WORKDIR /mysql-docker-python/Python
 
 COPY main.py ./
+

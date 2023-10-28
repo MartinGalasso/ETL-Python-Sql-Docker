@@ -1,11 +1,12 @@
 import mysql.connector
 
-connection = mysql.connector.connect(
-    user='root', password='root', host='mysql', port=3306, database='arboles')
+conn = mysql.connector.connect(
+    user='root', password='arbolesroot123', host='mysql', port=3306, database='arboles')
+
+cursor = conn.cursor()
 print("DB connected")
 
-cursor = connection.cursor()
 cursor.execute('SHOW TABLES;')
 arboles = cursor.fetchall()
-connection.close()
-print(arboles)
+conn.close()
+print(f'{arboles} no se que pasa pero se inicia xd')

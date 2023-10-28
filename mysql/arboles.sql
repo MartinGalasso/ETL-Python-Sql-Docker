@@ -1,4 +1,3 @@
-
 use arboles;
 
 CREATE TABLE if not exists infoArbol (
@@ -11,8 +10,8 @@ CREATE TABLE if not exists infoArbol (
 
 CREATE TABLE if not exists Coordenadas (
     id_arbol int NOT NULL AUTO_INCREMENT,
-    longgitud int NOT NULL,
-    lattitud int NOT NULL,
+    longitud int NOT NULL,
+    latitud int NOT NULL,
     coordx float NOT NULL,
     coordy float NOT NULL,
     FOREIGN KEY (id_arbol) REFERENCES infoArbol(id_arbol)
