@@ -4,9 +4,11 @@ services:
     build: ./Python/
     networks:
       - mynetwork
-    command: sh -c "sleep 20s ; python3 ./main.py"
+    command: sh -c "sleep 30s ; python3 ./main.py"
     depends_on:
       - mysql
+    volumes:
+      - ./dataset:/usr/src/app/dataset
 
   mysql:
     build: ./mysql/

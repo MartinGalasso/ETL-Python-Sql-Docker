@@ -4,5 +4,7 @@ RUN pip install mysql-connector-python
 
 WORKDIR /mysql-docker-python/Python
 
-COPY main.py ./
+COPY /main.py ./
+
+CMD ['python','main.py']
 
